@@ -19,6 +19,8 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+  <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -38,9 +40,9 @@
       </div>
 
       <div class="languages d-none d-md-flex align-items-center">
-        <ul>
-          <li>Срб</li>
-          <li><a href="#">Ен</a></li>
+        <ul id="language-switcher">
+          <li><a href="#" id="srb-lang">Срб</a></li>
+          <li><a href="#" class="eng-lang">Ен</a></li>
         </ul>
       </div>
     </div>
@@ -861,6 +863,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/scriptTranslate.js"></script>
 
 </body>
 
