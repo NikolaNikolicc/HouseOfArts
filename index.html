@@ -10,8 +10,9 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Logo.png" rel="icon">
+  
+  
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -52,16 +53,20 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Кућа уметности</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+      <!--<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
           <li class="dropdown"><a class="nav-link scrollto active" href="#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#еxhibition">Нове поставке</a></li>
+              <li><a href="#events">Нове поставке</a></li>
               <li><a href="#new-artists">Нови уметници</a></li>
               <li><a href="#latest-offers">Најновије понуде за уметнине</a></li>
+              <li><a href="#book-a-visit">Резервација</a></li>
+              <li><a href="#testimonials">Рецензије</a></li>
+              <li><a href="#gallery">Галерија</a></li>  
+              <li><a href="#contact">Контакт</a></li>      
             </ul>
           </li>
           
@@ -77,11 +82,16 @@
                   <li><a href="SelfPortrait.html">Аутопортрет са огрлицом од трња</a></li>
                 </ul>
               </li>
-              <li class="dropdown"><a href="#"><span>Скулптуре</span> <i class="bi bi-chevron-right"></i></a>
+              <li class="dropdown"><a href="sculptures.html"><span>Скулптуре</span> <i class="bi bi-chevron-right"></i></a>
                 <ul>
-                  <li><a href="#">Deep Drop Down 1</a></li>
-                  <li><a href="#">Deep Drop Down 2</a></li>
-                  <li><a href="#">Deep Drop Down 3</a></li>
+                  <li><a href="#">Давид</a></li>
+                  <li><a href="#">Милоска Венера</a></li>
+                  <li><a href="#">Пиета</a></li>
+                  <li><a href="#">Бацач диска</a></li>
+                  <li><a href="#">Гал на умору</a></li>
+                  <li><a href="#">Пољубац</a></li>
+                  <li><a href="#">Мислилац</a></li>  
+                  <li><a href="#">Крилата победа</a></li>
                 </ul>
               </li>
             </ul>
@@ -98,7 +108,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="#book-a-visit" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+      <a href="#book-a-reservation" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
     </div>
   </header><!-- End Header -->
 
@@ -111,8 +121,8 @@
           <h2>Пронађите скривене драгуље уметности и доживите непоновљиво искуство које ће Вас заувек променити!</h2>
 
           <div class="btns">
-            <a href="#menu" class="btn-menu animated fadeInUp scrollto">Уметнине</a>
-            <a href="#book-a-table" class="btn-book animated fadeInUp scrollto">Резервиши посету</a>
+            <a href="artwork.html" class="btn-menu animated fadeInUp scrollto">Уметнине</a>
+            <a href="#book-a-visit" class="btn-book animated fadeInUp scrollto">Резервиши посету</a>
           </div>
         </div>
         <div class="col-lg-4 d-flex align-items-center justify-content-center position-relative" data-aos="zoom-in" data-aos-delay="200">
@@ -125,45 +135,81 @@
 
   <main id="main">
 
-    <!-- ======= Exhibition Section ======= -->
-    <section id="exhibition" class="exhibition">
+    <!-- ======= Events Section ======= -->
+    <section id="events" class="events">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
           <h2>Нове поставке</h2>
           <p>Погледај нове поставке у нашој Kући уметности</p>
-        </div>
+        </div> 
 
-        <div class="row">
+        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper">
 
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events/colorExplosion.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Поставка ”Експлозија боја”</h3>
+                  <p class="fst-italic">
+                    Ова нова поставка у галерији представља уређену експлозију боја. 
+                    Изложени радови су живописни и витални, са јаким контрастима и разиграним 
+                    комбинацијама боја. Посетиоци ће се наћи окружени вртлогом енергије и живости, 
+                    док су радови постављени на начин који отвара простор за индивидуално искуство 
+                    и тумачење. Ова поставка је одличан изазов за све који су заинтересовани за визуелну 
+                    уживанцију и истраживање могућности боја.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events/artOfNature.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Поставка ”Уметност природе”</h3>
+                  <p class="fst-italic">
+                    "Уметност природе" је иновативна поставка која исплита уметност и природу 
+                    на изненађујуће начине. Изложени радови представљају природне материјале и 
+                    облике који су претворени у уметничка дела. Биљке, дрво, камење и други елементи 
+                    природе добијају нове облике и значења. Посетиоци имају прилику да се умрењују у 
+                    хармонији између уметности и природе, и дубље разумеју везу коју ове две сфере имају.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="row event-item">
+                <div class="col-lg-6">
+                  <img src="assets/img/events/soulReflection.jpeg" class="img-fluid" alt="">
+                </div>
+                <div class="col-lg-6 pt-4 pt-lg-0 content">
+                  <h3>Рефлексија душе</h3>
+                  <p class="fst-italic">
+                    Поставка "Рефлексија душе" представља узбудљиву поставку која прониче у 
+                    дубине људске душе. Ова унутрашња путовања кроз емоције и постојање су уловљена 
+                    у различитим уметничким изразима, укључујући слике, инсталације и видео радове. 
+                    Светлост и сенке играју важну улогу у стварању атмосфере која потиче самоистраживање 
+                    и контемплацију. Галерија омогућава посетиоцима да се дубоко погрозе унутар своје сопствене 
+                    душе и рефлектују о својим емоцијама и искуства. Ова интроспективна поставка пружа важан 
+                    простор за саморазвој и усмеравање, док истовремено омогућава упливање у светове других 
+                    људских постојања.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
+          <div class="swiper-pagination"></div>
         </div>
 
       </div>
-    </section><!-- End Exhibition Section -->
+    </section><!-- End Events Section -->
 
     <!-- ======= New artists Section ======= -->
     <section id="new-artists" class="new-artists">
@@ -221,33 +267,7 @@
                 </div>
             </div>
           </div>
-
-          <div class="col-lg-4">
-            <div class="box" data-aos="zoom-in" data-aos-delay="100">
-              <span>01</span>
-              <h4>Lorem Ipsum</h4>
-              <p>Ulamco laboris nisi ut aliquip ex ea commodo consequat. Et consectetur ducimus vero placeat</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="200">
-              <span>02</span>
-              <h4>Repellat Nihil</h4>
-              <p>Dolorem est fugiat occaecati voluptate velit esse. Dicta veritatis dolor quod et vel dire leno para dest</p>
-            </div>
-          </div>
-
-          <div class="col-lg-4 mt-4 mt-lg-0">
-            <div class="box" data-aos="zoom-in" data-aos-delay="300">
-              <span>03</span>
-              <h4> Ad ad velit qui</h4>
-              <p>Molestiae officiis omnis illo asperiores. Aut doloribus vitae sunt debitis quo vel nam quis</p>
-            </div>
-          </div>
-
         </div>
-
       </div>
     </section><!-- End New Artists Section -->
 
@@ -260,260 +280,56 @@
           <p>Буди у току са најновијим понудама</p>
         </div>
 
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-12 d-flex justify-content-center">
-            <ul id="latest-offers-flters">
-              <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-starters">Starters</li>
-              <li data-filter=".filter-salads">Salads</li>
-              <li data-filter=".filter-specialty">Specialty</li>
-            </ul>
-          </div>
-        </div>
-
-        <div class="row latest-offers-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-6 latest-offers-item filter-starters">
-            <img src="assets/img/menu/lobster-bisque.jpg" class="latest-offers-img" alt="">
-            <div class="menu-content">
-              <a href="#">Lobster Bisque</a><span>$5.95</span>
-            </div>
-            <div class="latest-offers-ingredients">
-              Lorem, deren, trataro, filede, nerada
+        <div class="row offers">
+          <!-- <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/artists/FrigaKahlo.jpeg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Фрида Кало</h4>
+                    <span>
+                      Икона модерне уметности која је својим јединственим изразом изазвала снажан утицај на 
+                      уметничку сцену и постала симбол снаге, аутентичности и препознавања властитог идентитета.
+                    </span>
+                    <a href="fridaKahlo.html">Прочитај више</a>
+                  </div>
+                </div>
             </div>
           </div>
 
-          <div class="col-lg-6 latest-offers-item filter-specialty">
-            <img src="assets/img/menu/bread-barrel.jpg" class="latest-offers-img" alt="">
-            <div class="latest-offers-content">
-              <a href="#">Bread Barrel</a><span>$6.95</span>
-            </div>
-            <div class="latest-offers-ingredients">
-              Lorem, deren, trataro, filede, nerada
-            </div>
-          </div>
-
-          <div class="col-lg-6 latest-offers-item filter-starters">
-            <img src="assets/img/menu/cake.jpg" class="latest-offers-img" alt="">
-            <div class="latest-offers-content">
-              <a href="#">Crab Cake</a><span>$7.95</span>
-            </div>
-            <div class="latest-offers-ingredients">
-              A delicate crab cake served on a toasted roll with lettuce and tartar sauce
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/artists/VincentVanGogh.jpeg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Винсент ван Гог</h4>
+                    <span>
+                      Иконичан холандски сликар чије слике одражавају његову страст и емоционалну дубину.
+                    </span>
+                    <a href="vincentVanGogh.html">Прочитај више</a>
+                  </div>
+                </div>
             </div>
           </div>
 
-          <div class="col-lg-6 latest-offers-item filter-salads">
-            <img src="assets/img/menu/caesar.jpg" class="latest-offers-img" alt="">
-            <div class="latest-offers-content">
-              <a href="#">Caesar Selections</a><span>$8.95</span>
-            </div>
-            <div class="menu-ingredients">
-              Lorem, deren, trataro, filede, nerada
+          <div class="col-lg-4 col-md-6">
+            <div class="member" data-aos="zoom-in" data-aos-delay="100">
+              <img src="assets/img/artists/FranciscoGoya.jpeg" class="img-fluid" alt="">
+                <div class="member-info">
+                  <div class="member-info-content">
+                    <h4>Фрранциско Гоја</h4>
+                    <span>
+                      Шпански сликар промељивог стила, познат по својим портретима, печатима и сатирама.
+                    </span>
+                    <a href="franciscoGoya.html">Прочитај више</a>
+                  </div>
+                </div>
             </div>
           </div>
-        </div>
+        </div> -->
 
       </div>
     </section><!-- End Latest Offers Section -->
-
-    <!-- ======= Specials Section ======= -->
-    <section id="specials" class="specials">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Specials</h2>
-          <p>Check Our Specials</p>
-        </div>
-
-        <div class="row" data-aos="fade-up" data-aos-delay="100">
-          <div class="col-lg-3">
-            <ul class="nav nav-tabs flex-column">
-              <li class="nav-item">
-                <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Modi sit est</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-2">Unde praesentium sed</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Pariatur explicabo vel</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-4">Nostrum qui quasi</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" data-bs-toggle="tab" href="#tab-5">Iusto ut expedita aut</a>
-              </li>
-            </ul>
-          </div>
-          <div class="col-lg-9 mt-4 mt-lg-0">
-            <div class="tab-content">
-              <div class="tab-pane active show" id="tab-1">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Architecto ut aperiam autem id</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Et nobis maiores eius. Voluptatibus ut enim blanditiis atque harum sint. Laborum eos ipsum ipsa odit magni. Incidunt hic ut molestiae aut qui. Est repellat minima eveniet eius et quis magni nihil. Consequatur dolorem quaerat quos qui similique accusamus nostrum rem vero</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-1.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-2">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Et blanditiis nemo veritatis excepturi</h3>
-                    <p class="fst-italic">Qui laudantium consequatur laborum sit qui ad sapiente dila parde sonata raqer a videna mareta paulona marka</p>
-                    <p>Ea ipsum voluptatem consequatur quis est. Illum error ullam omnis quia et reiciendis sunt sunt est. Non aliquid repellendus itaque accusamus eius et velit ipsa voluptates. Optio nesciunt eaque beatae accusamus lerode pakto madirna desera vafle de nideran pal</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-2.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-3">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Impedit facilis occaecati odio neque aperiam sit</h3>
-                    <p class="fst-italic">Eos voluptatibus quo. Odio similique illum id quidem non enim fuga. Qui natus non sunt dicta dolor et. In asperiores velit quaerat perferendis aut</p>
-                    <p>Iure officiis odit rerum. Harum sequi eum illum corrupti culpa veritatis quisquam. Neque necessitatibus illo rerum eum ut. Commodi ipsam minima molestiae sed laboriosam a iste odio. Earum odit nesciunt fugiat sit ullam. Soluta et harum voluptatem optio quae</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-3.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-4">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Fuga dolores inventore laboriosam ut est accusamus laboriosam dolore</h3>
-                    <p class="fst-italic">Totam aperiam accusamus. Repellat consequuntur iure voluptas iure porro quis delectus</p>
-                    <p>Eaque consequuntur consequuntur libero expedita in voluptas. Nostrum ipsam necessitatibus aliquam fugiat debitis quis velit. Eum ex maxime error in consequatur corporis atque. Eligendi asperiores sed qui veritatis aperiam quia a laborum inventore</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-4.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-              <div class="tab-pane" id="tab-5">
-                <div class="row">
-                  <div class="col-lg-8 details order-2 order-lg-1">
-                    <h3>Est eveniet ipsam sindera pad rone matrelat sando reda</h3>
-                    <p class="fst-italic">Omnis blanditiis saepe eos autem qui sunt debitis porro quia.</p>
-                    <p>Exercitationem nostrum omnis. Ut reiciendis repudiandae minus. Omnis recusandae ut non quam ut quod eius qui. Ipsum quia odit vero atque qui quibusdam amet. Occaecati sed est sint aut vitae molestiae voluptate vel</p>
-                  </div>
-                  <div class="col-lg-4 text-center order-1 order-lg-2">
-                    <img src="assets/img/specials-5.png" alt="" class="img-fluid">
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-      </div>
-    </section><!-- End Specials Section -->
-
-    <!-- ======= Events Section ======= -->
-    <section id="events" class="events">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Events</h2>
-          <p>Organize Your Events in our Restaurant</p>
-        </div>
-
-        <div class="events-slider swiper" data-aos="fade-up" data-aos-delay="100">
-          <div class="swiper-wrapper">
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-birthday.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Birthday Parties</h3>
-                  <div class="price">
-                    <p><span>$189</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-private.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Private Parties</h3>
-                  <div class="price">
-                    <p><span>$290</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="row event-item">
-                <div class="col-lg-6">
-                  <img src="assets/img/event-custom.jpg" class="img-fluid" alt="">
-                </div>
-                <div class="col-lg-6 pt-4 pt-lg-0 content">
-                  <h3>Custom Parties</h3>
-                  <div class="price">
-                    <p><span>$99</span></p>
-                  </div>
-                  <p class="fst-italic">
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-                    magna aliqua.
-                  </p>
-                  <ul>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                    <li><i class="bi bi-check-circled"></i> Duis aute irure dolor in reprehenderit in voluptate velit.</li>
-                    <li><i class="bi bi-check-circled"></i> Ullamco laboris nisi ut aliquip ex ea commodo consequat.</li>
-                  </ul>
-                  <p>
-                    Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate
-                    velit esse cillum dolore eu fugiat nulla pariatur
-                  </p>
-                </div>
-              </div>
-            </div><!-- End testimonial item -->
-
-          </div>
-          <div class="swiper-pagination"></div>
-        </div>
-
-      </div>
-    </section><!-- End Events Section -->
 
     <!-- ======= Reservation ======= -->
     <section id="book-a-visit" class="book-a-visit">
@@ -577,30 +393,20 @@
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper">
-
             <div class="swiper-slide">
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Proin iaculis purus consequat sem cure digni ssim donec porttitora entum suscipit rhoncus. Accusantium quam, ultricies eget id, aliquam eget nibh et. Maecen aliquam, risus at semper.
-                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
-                </p>
-                <img src="assets/img/testimonials/testimonials-1.jpg" class="testimonial-img" alt="">
-                <h3>Saul Goodman</h3>
-                <h4>Ceo &amp; Founder</h4>
-              </div>
-            </div><!-- End testimonial item -->
-
-            <div class="swiper-slide">
-              <div class="testimonial-item">
-                <p>
-                  <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Export tempor illum tamen malis malis eram quae irure esse labore quem cillum quid cillum eram malis quorum velit fore eram velit sunt aliqua noster fugiat irure amet legam anim culpa.
+                    Ова галерија је заиста осликавање уметности највише класе. 
+                    Свеукупно искуство је било зачаравајуће, од почетка до краја.
+                    Изложени радови нас уводе у свет богатства и креативности, и пружају нам нове увиде и идеје. 
+                    Простор галерије је елегантан и добро уређен, што доприноси опуштеној атмосфери. 
+                    Особље је било веома љубазно и услужно, спремно да одговори на сва наша питања. 
+                    Препоручујем свим љубитељима уметности да посете ову галерију - нећете се разочарати!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-2.jpg" class="testimonial-img" alt="">
-                <h3>Sara Wilsson</h3>
-                <h4>Designer</h4>
+                <h3>Марија Петровић</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -608,12 +414,15 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Enim nisi quem export duis labore cillum quae magna enim sint quorum nulla quem veniam duis minim tempor labore quem eram duis noster aute amet eram fore quis sint minim.
+                  Фантастична галерија! Радови који су изложени су потресни и дубоко утемељени у 
+                  емоцијама и идејама. Уживао сам у сваком тренутку мог посета. Посебно ме је дозвола 
+                  улаза у "зону тишине" одушевила. Осећао сам се као да сам сами са радовима и могао 
+                  сам да се потпуно уклопим у њихову есенцију. Организација је била савршена, а особље 
+                  је било изузетно приступачно и спремно на дијалог. Хвала вам на оваквом искуству!
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-3.jpg" class="testimonial-img" alt="">
-                <h3>Jena Karlis</h3>
-                <h4>Store Owner</h4>
+                <h3>Анастасија Јовановић</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -621,12 +430,16 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Fugiat enim eram quae cillum dolore dolor amet nulla culpa multos export minim fugiat minim velit minim dolor enim duis veniam ipsum anim magna sunt elit fore quem dolore labore illum veniam.
+                  Ова галерија представља заиста унутрашњи свет уметности. 
+                  Изложени радови су пресретачни и дубоко утемељени у емоцијама и идејама. 
+                  Простор галерије пружа пријатну атмосферу и узбудљиву интеракцију са уметничким делима. 
+                  Особље је услужно и љубазно, а њихова стручност доприноси бољем разумевању изложених 
+                  радова. Препоручујем свим љубитељима уметности да посете ову галерију и уживају 
+                  у њеном богатству и креативности.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-4.jpg" class="testimonial-img" alt="">
-                <h3>Matt Brandon</h3>
-                <h4>Freelancer</h4>
+                <h3>Јован Јанковић</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -634,12 +447,16 @@
               <div class="testimonial-item">
                 <p>
                   <i class="bx bxs-quote-alt-left quote-icon-left"></i>
-                  Quis quorum aliqua sint quem legam fore sunt eram irure aliqua veniam tempor noster veniam enim culpa labore duis sunt culpa nulla illum cillum fugiat legam esse veniam culpa fore nisi cillum quid.
+                  Галерија која надмашује све очекивање! Изложба радова у овој галерији је 
+                  зачаравајућа и непроходна за сваког посетиоца. Изражавајући широк спектар 
+                  емоција и порука, радови преносе уметничку визију на високом нивоу. Атмосфера 
+                  галерије је инспирисана и потпуно исцрпавајућа, омогућавајући посетиоцима да се 
+                  потпуно уклопе у уметничко искуство. Особље је услужно и добро информисано, 
+                  стварајући пријатан и образован дијалог.
                   <i class="bx bxs-quote-alt-right quote-icon-right"></i>
                 </p>
                 <img src="assets/img/testimonials/testimonials-5.jpg" class="testimonial-img" alt="">
-                <h3>John Larson</h3>
-                <h4>Entrepreneur</h4>
+                <h3>Марко Станковић</h3>
               </div>
             </div><!-- End testimonial item -->
 
@@ -655,8 +472,8 @@
 
       <div class="container" data-aos="fade-up">
         <div class="section-title">
-          <h2>Gallery</h2>
-          <p>Some photos from Our Restaurant</p>
+          <h2>Галерија</h2>
+          <p>Слике из наше галерије</p>
         </div>
       </div>
 
@@ -664,66 +481,66 @@
 
         <div class="row g-0">
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-1.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-1.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-2.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery2.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery2.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-3.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery3.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery3.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-4.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-4.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery7.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery7.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-5.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-5.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery5.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery5.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-6.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-6.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery6.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery6.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-7.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-7.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery9.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery9.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
 
-          <div class="col-lg-3 col-md-4">
+          <div class="col-lg-3 col-md-6">
             <div class="gallery-item">
-              <a href="assets/img/gallery/gallery-8.jpg" class="gallery-lightbox" data-gall="gallery-item">
-                <img src="assets/img/gallery/gallery-8.jpg" alt="" class="img-fluid">
+              <a href="assets/img/gallery/gallery8.jpeg" class="gallery-lightbox" data-gall="gallery-item">
+                <img src="assets/img/gallery/gallery8.jpeg" alt="" class="img-fluid">
               </a>
             </div>
           </div>
@@ -732,76 +549,6 @@
 
       </div>
     </section><!-- End Gallery Section -->
-
-    <!-- ======= Chefs Section ======= -->
-    <section id="chefs" class="chefs">
-      <div class="container" data-aos="fade-up">
-
-        <div class="section-title">
-          <h2>Chefs</h2>
-          <p>Our Proffesional Chefs</p>
-        </div>
-
-        <div class="row">
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="100">
-              <img src="assets/img/chefs/chefs-1.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Walter White</h4>
-                  <span>Master Chef</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="200">
-              <img src="assets/img/chefs/chefs-2.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>Sarah Jhonson</h4>
-                  <span>Patissier</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-4 col-md-6">
-            <div class="member" data-aos="zoom-in" data-aos-delay="300">
-              <img src="assets/img/chefs/chefs-3.jpg" class="img-fluid" alt="">
-              <div class="member-info">
-                <div class="member-info-content">
-                  <h4>William Anderson</h4>
-                  <span>Cook</span>
-                </div>
-                <div class="social">
-                  <a href=""><i class="bi bi-twitter"></i></a>
-                  <a href=""><i class="bi bi-facebook"></i></a>
-                  <a href=""><i class="bi bi-instagram"></i></a>
-                  <a href=""><i class="bi bi-linkedin"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section><!-- End Chefs Section -->
 
     <!-- ======= Contact Section ======= -->
     <section id="contact" class="contact">
