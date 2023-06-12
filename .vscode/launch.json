@@ -8,7 +8,7 @@
             "type": "chrome",
             "request": "launch",
             "name": "Launch Chrome against localhost",
-            "url": "C:\\programiranje\\projekti\\HouseOfArt\\aboutUs.html",
+            "url": "C:\\programiranje\\projekti\\HouseOfArt\\index.html",
             "webRoot": "${workspaceFolder}"
         }
     ]
