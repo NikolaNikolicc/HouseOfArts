@@ -10,8 +10,7 @@
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/favicon.png" rel="icon">
-  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <link href="assets/img/Logo.png" rel="icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
@@ -19,6 +18,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -61,12 +61,12 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Кућа уметности</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+      <!--<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li class="dropdown"><a href="index.html#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto active" href="index.html#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="index.html#events">Нове поставке</a></li>
               <li><a href="index.html#new-artists">Нови уметници</a></li>
@@ -74,41 +74,25 @@
               <li><a href="index.html#book-a-visit">Резервација</a></li>
               <li><a href="index.html#testimonials">Рецензије</a></li>
               <li><a href="index.html#gallery">Галерија</a></li>  
-              <li><a href="index.html#contact">Контакт</a></li>     
+              <li><a href="index.html#contact">Контакт</a></li>      
             </ul>
           </li>
           
-          <li class="dropdown"><a  class="nav-link scrollto active" href="artwork.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="artworks.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="LasMeninas.html">Мале дворске даме</a></li>
-                  <li><a href="TheThirdOfMay1808.html">3. мај 1808.</a></li>
-                  <li><a href="TheGardenOfEarthlyDelights.html">Врт уживања</a></li>
-                  <li><a href="StarryNight.html">Звездана ноћ</a></li>
-                  <li><a href="TheKiss.html">Пољубац</a></li>
-                  <li><a href="SelfPortrait.html">Аутопортрет са огрлицом од трња</a></li>
+                <ul id="paintings-list">
                 </ul>
               </li>
               <li class="dropdown"><a href="sculptures.html"><span>Скулптуре</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Давид</a></li>
-                  <li><a href="#">Милоска Венера</a></li>
-                  <li><a href="#">Пиета</a></li>
-                  <li><a href="#">Бацач диска</a></li>
-                  <li><a href="#">Гал на умору</a></li>
-                  <li><a href="#">Пољубац</a></li>
-                  <li><a href="#">Мислилац</a></li>  
-                  <li><a href="#">Крилата победа</a></li>
+                <ul id="sculptures-list">
                 </ul>
               </li>
             </ul>
           </li>
           <li class="dropdown"><a href="artists.html"><span>Уметници</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="artist1.html">Deep Drop Down 1</a></li>
-              <li><a href="artist2.html">Deep Drop Down 2</a></li>
-              <li><a href="artist3.html">Deep Drop Down 3</a></li>
+            <ul id="artists-list">
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="myAccount.html">Мој налог</a></li>
@@ -116,9 +100,9 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="index.html#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+      <a href="#book-a-reservation" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
     </div>
-  </header><!-- End Header -->
+  </header>
 
   <main id="main">
     <section class="breadcrumbs">
@@ -128,9 +112,7 @@
           <h2>Уметнине</h2>
           <ol>
             <li><a href="index.html">Почетна</a></li>
-            <li><a href="artwork.html">Уметнине</a></li>
-            <li><a href="paintings.html">Слике</a></li>
-            <li>slikaaa</li>
+            <li>Уметнине</li>
           </ol>
         </div>
 
@@ -142,32 +124,10 @@
         <div class="container" data-aos="fade-up">
 
           <div class="section-title">
-            <h2>slikaaa</h2>
+            <h2>Уметнине</h2>
           </div>
   
-          <div class="row">
-  
-            <div class="col-lg-6 col-md-6 painting">
-              <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                <img src="assets/img/paintings/LasMeninas.jpeg" class="img-fluid" alt="">
-                  <div class="member-info">
-                    <div class="member-info-content">
-                      <h4>Мале дворске даме</h4>
-                    </div>
-                  </div>
-              </div>
-            </div>
-
-            <div class="col-lg-6 col-md-6 content">
-              <div class="member" data-aos="zoom-in" data-aos-delay="100">
-                <h3>Slikaaa</h3>
-                <p class="fst-italic">
-                  opis dinamicki
-                </p>  
-              </div>
-            </div>
-
-
+          <div class="row artworks">
           </div>
         </div>
       </div>
@@ -235,6 +195,11 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/artistsData.js"></script>
+  <script src="assets/js/artworksData.js"></script>
+  <script src="assets/js/script.js"></script>
+  <script src="assets/js/scriptArtwork.js"></script>
+  <script src="assets/js/artworks.js"></script>
 
 </body>
 

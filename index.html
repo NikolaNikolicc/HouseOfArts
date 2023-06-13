@@ -60,47 +60,31 @@
         <ul>
           <li class="dropdown"><a class="nav-link scrollto active" href="#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li><a href="#events">Нове поставке</a></li>
-              <li><a href="#new-artists">Нови уметници</a></li>
-              <li><a href="#latest-offers">Најновије понуде за уметнине</a></li>
-              <li><a href="#book-a-visit">Резервација</a></li>
-              <li><a href="#testimonials">Рецензије</a></li>
-              <li><a href="#gallery">Галерија</a></li>  
-              <li><a href="#contact">Контакт</a></li>      
+              <li><a href="index.html#events">Нове поставке</a></li>
+              <li><a href="index.html#new-artists">Нови уметници</a></li>
+              <li><a href="index.html#latest-offers">Најновије понуде за уметнине</a></li>
+              <li><a href="index.html#book-a-visit">Резервација</a></li>
+              <li><a href="index.html#testimonials">Рецензије</a></li>
+              <li><a href="index.html#gallery">Галерија</a></li>  
+              <li><a href="index.html#contact">Контакт</a></li>      
             </ul>
           </li>
           
-          <li class="dropdown"><a href="artwork.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="artworks.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="LasMeninas.html">Мале дворске даме</a></li>
-                  <li><a href="TheThirdOfMay1808.html">3. мај 1808.</a></li>
-                  <li><a href="TheGardenOfEarthlyDelights.html">Врт уживања</a></li>
-                  <li><a href="StarryNight.html">Звездана ноћ</a></li>
-                  <li><a href="TheKiss.html">Пољубац</a></li>
-                  <li><a href="SelfPortrait.html">Аутопортрет са огрлицом од трња</a></li>
+                <ul id="paintings-list">
                 </ul>
               </li>
               <li class="dropdown"><a href="sculptures.html"><span>Скулптуре</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Давид</a></li>
-                  <li><a href="#">Милоска Венера</a></li>
-                  <li><a href="#">Пиета</a></li>
-                  <li><a href="#">Бацач диска</a></li>
-                  <li><a href="#">Гал на умору</a></li>
-                  <li><a href="#">Пољубац</a></li>
-                  <li><a href="#">Мислилац</a></li>  
-                  <li><a href="#">Крилата победа</a></li>
+                <ul id="sculptures-list">
                 </ul>
               </li>
             </ul>
           </li>
           <li class="dropdown"><a href="artists.html"><span>Уметници</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="artist1.html">Deep Drop Down 1</a></li>
-              <li><a href="artist2.html">Deep Drop Down 2</a></li>
-              <li><a href="artist3.html">Deep Drop Down 3</a></li>
+            <ul id="artists-list">
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="myAccount.html">Мој налог</a></li>
@@ -232,8 +216,8 @@
                       Икона модерне уметности која је својим јединственим изразом изазвала снажан утицај на 
                       уметничку сцену и постала симбол снаге, аутентичности и препознавања властитог идентитета.
                     </span>
-                    <button class="btn artist-redirect" id="FrigaKahlo">
-                      <a href="#">Прочитај више</a>
+                    <button class="btn artist-redirect" id="FridaKahlo">
+                      <a href="artist.html">Прочитај више</a>
                     </button>
                   </div>
                 </div>
@@ -665,8 +649,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
-  <script src="assets/js/scriptTranslate.js"></script>
-  <script src="assets/js/scriptArtists.js"></script>
+  <script src="assets/js/artistsData.js"></script>
+  <script src="assets/js/artworksData.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 

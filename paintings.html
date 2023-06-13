@@ -19,6 +19,7 @@
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
   <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
   <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
@@ -61,8 +62,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
       <h1 class="logo me-auto me-lg-0"><a href="index.html">Кућа уметности</a></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      
+      <!--<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
@@ -78,37 +79,21 @@
             </ul>
           </li>
           
-          <li class="dropdown"><a class="nav-link scrollto active" href="artwork.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto active" href="artworks.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
-              <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="LasMeninas.html">Мале дворске даме</a></li>
-                  <li><a href="TheThirdOfMay1808.html">3. мај 1808.</a></li>
-                  <li><a href="TheGardenOfEarthlyDelights.html">Врт уживања</a></li>
-                  <li><a href="StarryNight.html">Звездана ноћ</a></li>
-                  <li><a href="TheKiss.html">Пољубац</a></li>
-                  <li><a href="SelfPortrait.html">Аутопортрет са огрлицом од трња</a></li>
+              <li class="dropdown"><a class="nav-link scrollto active" href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
+                <ul id="paintings-list">
                 </ul>
               </li>
               <li class="dropdown"><a href="sculptures.html"><span>Скулптуре</span> <i class="bi bi-chevron-right"></i></a>
-                <ul>
-                  <li><a href="#">Давид</a></li>
-                  <li><a href="#">Милоска Венера</a></li>
-                  <li><a href="#">Пиета</a></li>
-                  <li><a href="#">Бацач диска</a></li>
-                  <li><a href="#">Гал на умору</a></li>
-                  <li><a href="#">Пољубац</a></li>
-                  <li><a href="#">Мислилац</a></li>  
-                  <li><a href="#">Крилата победа</a></li>
+                <ul id="sculptures-list">
                 </ul>
               </li>
             </ul>
           </li>
           <li class="dropdown"><a href="artists.html"><span>Уметници</span> <i class="bi bi-chevron-down"></i></a>
-            <ul>
-              <li><a href="artist1.html">Deep Drop Down 1</a></li>
-              <li><a href="artist2.html">Deep Drop Down 2</a></li>
-              <li><a href="artist3.html">Deep Drop Down 3</a></li>
+            <ul id="artists-list">
+              
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="myAccount.html">Мој налог</a></li>
@@ -116,7 +101,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+      <a href="#book-a-reservation" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
     </div>
   </header><!-- End Header -->
 
@@ -286,6 +271,9 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/artistsData.js"></script>
+  <script src="assets/js/artworksData.js"></script>
+  <script src="assets/js/script.js"></script>
 
 </body>
 
