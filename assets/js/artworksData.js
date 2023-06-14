@@ -1,5 +1,6 @@
 var artworks = {
     LasMeninas:{
+        id: '0',
         name:'Мале дворске даме',
         type:'painting',
         artist:'Дијего Веласкез',
@@ -8,6 +9,7 @@ var artworks = {
         image:'paintings/LasMeninas.jpeg',
     },
     TheThirdOfMay1808:{
+        id: '1',
         name:'3. мај 1808.',
         type:'painting',
         artist:'Франциско Гоја',
@@ -16,6 +18,7 @@ var artworks = {
         image:'paintings/TheThirdOfMay1808.jpeg',
     },
     TheGardenOfEarthlyDelights:{
+        id: '2',
         name:'Врт уживања',
         type:'painting',
         artist:'Хијероним Бош',
@@ -24,6 +27,7 @@ var artworks = {
         image:'paintings/TheGardenOfEarthlyDelights.jpeg',
     },
     StarryNight:{
+        id: '3',
         name:'Звездана ноћ',
         type:'painting',
         artist:'Винсент ван Гог',
@@ -32,6 +36,7 @@ var artworks = {
         image:'paintings/TheStarryNight.jpg',
     },
     TheKiss:{
+        id: '4',
         name:'Пољубац',
         type:'painting',
         artist:'Густав Климт',
@@ -40,6 +45,7 @@ var artworks = {
         image:'paintings/TheKiss.jpeg',
     },
     SelfPortrait:{
+        id: '5',
         name:'Аутопортрет са огрлицом од трња',
         type:'painting',
         artist:'Фрида Кало',
@@ -48,6 +54,7 @@ var artworks = {
         image:'paintings/SelfPortrait.jpeg',
     },
     David:{
+        id: '6',
         name:'Давид',
         type:'sculpture',
         artist:'Микеланђело Буонароти',
@@ -56,6 +63,7 @@ var artworks = {
         image:'sculptures/david.jpeg',
     },
     VeneraDeMilo:{
+        id: '7',
         name:'Милоска Венера',
         type:'sculpture',
         artist:'Александрос Антиохијски ',
@@ -64,6 +72,7 @@ var artworks = {
         image:'sculptures/veneraDeMilo.jpeg',
     },
     Pieta:{
+        id: '8',
         name:'Пиета',
         type:'sculpture',
         artist:'Микеланђело Буонароти',
@@ -72,6 +81,7 @@ var artworks = {
         image:'sculptures/pieta.jpeg',
     },
     theDiscusThrower:{
+        id: '9',
         name:'Бацач диска',
         type:'sculpture',
         artist:'Мирон',
@@ -80,6 +90,7 @@ var artworks = {
         image:'sculptures/theDiscusThrower.jpeg',
     },
     theDyingGaul:{
+        id: '10',
         name:'Гал на умору',
         type:'sculpture',
         artist:'Непознат',
@@ -88,6 +99,7 @@ var artworks = {
         image:'sculptures/theDyingGaul.jpeg',
     },
     Kiss:{
+        id: '11',
         name:'Пољубац',
         type:'sculpture',
         artist:'Огист Роден',
@@ -96,6 +108,7 @@ var artworks = {
         image:'sculptures/theKiss.jpg',
     },
     theThinker:{
+        id: '12',
         name:'Мислилац',
         type:'sculpture',
         artist:'Огист Роден',
@@ -104,6 +117,7 @@ var artworks = {
         image:'sculptures/theThinker.jpg',
     },
     wingedVictoryOfSamothrace:{
+        id: '13',
         name:'Крилата победа',
         type:'sculpture',
         artist:'Непознат',

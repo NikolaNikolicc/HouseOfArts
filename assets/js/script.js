@@ -3,7 +3,7 @@ $(document).ready(function(){
     initFile();
 
     function initFile(){
-        alert("d");
+        // alert("d");
         Object.entries(artists).forEach(([key, value]) => {
             $("#artists-list").append("<li><a class='artist-redirect' id="+ key +" href='artist.html'>"+ value.name +"</a></li>")
         });
