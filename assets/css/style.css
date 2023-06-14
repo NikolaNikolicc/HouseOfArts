@@ -1072,7 +1072,7 @@ section {
 }
 
 .book-a-visit .php-email-form .error-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1085,7 +1085,7 @@ section {
 }
 
 .book-a-visit .php-email-form .sent-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1094,7 +1094,7 @@ section {
 }
 
 .book-a-visit .php-email-form .loading {
-  display: none;
+  /* display: none; */
   text-align: center;
   padding: 15px;
 }
@@ -1398,7 +1398,7 @@ section {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #ed3c0d;
   text-align: center;
@@ -1407,7 +1407,7 @@ section {
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1416,7 +1416,7 @@ section {
 }
 
 .contact .php-email-form .loading {
-  display: none;
+  /* display: none; */
   text-align: center;
   padding: 15px;
 }

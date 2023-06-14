@@ -2,35 +2,36 @@
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-    <title>Мој налог</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+  <title>Restaurantly Bootstrap Template - Inner Page</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
 
-    <!-- Favicons -->
-    <link href="assets/img/favicon.png" rel="icon">
-    <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- Favicons -->
+  <link href="assets/img/Logo.png" rel="icon">
 
-    <!-- Google Fonts -->
-    <link
-        href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
-        rel="stylesheet">
 
-    <!-- Vendor CSS Files -->
-    <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
-    <link href="assets/vendor/aos/aos.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
-    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
-    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
-    <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
-    <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
+  <link
+    href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i"
+    rel="stylesheet">
 
-    <!-- Template Main CSS File -->
-    <link href="assets/css/style.css" rel="stylesheet">
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <script src="assets/vendor/jquery/jquery-3.7.0.min.js"></script>
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
-    <!-- =======================================================
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
   * Template Name: Restaurantly
   * Updated: May 30 2023 with Bootstrap v5.3.0
   * Template URL: https://bootstrapmade.com/restaurantly-restaurant-template/
@@ -41,71 +42,72 @@
 
 <body>
 
-    <!-- ======= Top Bar ======= -->
-    <div id="topbar" class="d-flex align-items-center fixed-top">
-        <div class="container d-flex justify-content-center justify-content-md-between">
+  <!-- ======= Top Bar ======= -->
+  <div id="topbar" class="d-flex align-items-center fixed-top">
+    <div class="container d-flex justify-content-center justify-content-md-between">
 
-            <div class="contact-info d-flex align-items-center">
-                <i class="bi bi-phone d-flex align-items-center"><span>+381 64 8249 159</span></i>
-                <i class="bi bi-clock d-flex align-items-center ms-4"><span> Пон-Пет: 11 - 20ч</span></i>
-            </div>
+      <div class="contact-info d-flex align-items-center">
+        <i class="bi bi-phone d-flex align-items-center"><span>+381 64 8249 159</span></i>
+        <i class="bi bi-clock d-flex align-items-center ms-4"><span> Пон-Пет: 11 - 20ч</span></i>
+      </div>
 
-            <div class="languages d-none d-md-flex align-items-center">
-                <ul>
-                    <li>Срб</li>
-                    <li><a href="#">Ен</a></li>
-                </ul>
-            </div>
-        </div>
+      <div class="languages d-none d-md-flex align-items-center">
+        <ul id="language-switcher">
+          <li><a href="#" id="srb-lang">Срб</a></li>
+          <li><a href="#" class="eng-lang">Ен</a></li>
+        </ul>
+      </div>
     </div>
+  </div>
 
-    <header id="header" class="fixed-top d-flex align-items-cente">
-        <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
+  <header id="header" class="fixed-top d-flex align-items-cente">
+    <div class="container-fluid container-xl d-flex align-items-center justify-content-lg-between">
 
-            <h1 class="logo me-auto me-lg-0"><a href="index.html">Кућа уметности</a></h1>
-            <!-- Uncomment below if you prefer to use an image logo -->
-            <!-- <a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      <h1 class="logo me-auto me-lg-0"><a href="index.html">Кућа уметности</a></h1>
 
-            <nav id="navbar" class="navbar order-last order-lg-0">
-                <ul>
-                    <li><a href="index.html">Почетна</a></li>
-                    <li class="dropdown"><a class="nav-link scrollto" href="artwork.html"><span>Уметнине</span> <i
-                                class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="artwork1.html">Мале дворске даме</a></li>
-                                    <li><a href="artwork2.html">3. мај 1808.</a></li>
-                                    <li><a href="artwork3.html">Врт уживања</a></li>
-                                </ul>
-                            </li>
-                            <li class="dropdown"><a href="#"><span>Скулптуре</span> <i
-                                        class="bi bi-chevron-right"></i></a>
-                                <ul>
-                                    <li><a href="#">Deep Drop Down 1</a></li>
-                                    <li><a href="#">Deep Drop Down 2</a></li>
-                                    <li><a href="#">Deep Drop Down 3</a></li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </li>
-                    <li class="dropdown"><a href="artists.html"><span>Уметнине</span> <i
-                                class="bi bi-chevron-down"></i></a>
-                        <ul>
-                            <li><a href="artist1.html">Deep Drop Down 1</a></li>
-                            <li><a href="artist2.html">Deep Drop Down 2</a></li>
-                            <li><a href="artist3.html">Deep Drop Down 3</a></li>
-                        </ul>
-                    </li>
-                    <li><a class="nav-link scrollto active" href="myAccount.html">Мој налог</a></li>
-                    <li><a class="nav-link scrollto" href="aboutUs.html">О нама</a></li>
+      <!--<a href="index.html" class="logo me-auto me-lg-0"><img src="assets/img/Logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li class="dropdown"><a href="#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="index.html#events">Нове поставке</a></li>
+              <li><a href="index.html#new-artists">Нови уметници</a></li>
+              <li><a href="index.html#latest-offers">Најновије понуде за уметнине</a></li>
+              <li><a href="index.html#book-a-visit">Резервација</a></li>
+              <li><a href="index.html#testimonials">Рецензије</a></li>
+              <li><a href="index.html#gallery">Галерија</a></li>
+              <li><a href="index.html#contact">Контакт</a></li>
+            </ul>
+          </li>
+
+          <li class="dropdown"><a class="nav-link scrollto active" href="artworks.html"><span>Уметнине</span> <i
+                class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
+                <ul id="paintings-list">
                 </ul>
-                <i class="bi bi-list mobile-nav-toggle"></i>
-            </nav>
-            <a href="index.html#book-a-table" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
-        </div>
-    </header><!-- End Header -->
+              </li>
+              <li class="dropdown"><a href="sculptures.html"><span>Скулптуре</span> <i
+                    class="bi bi-chevron-right"></i></a>
+                <ul id="sculptures-list">
+                </ul>
+              </li>
+            </ul>
+          </li>
+          <li class="dropdown"><a href="artists.html"><span>Уметници</span> <i class="bi bi-chevron-down"></i></a>
+            <ul id="artists-list">
+
+            </ul>
+          </li>
+          <li><a class="nav-link scrollto" href="myAccount.html">Мој налог</a></li>
+          <li><a class="nav-link scrollto" href="aboutUs.html">О нама</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav>
+      <a href="#book-a-reservation" class="book-a-visit-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+    </div>
+  </header><!-- End Header -->
 
     <main id="main">
         <section class="breadcrumbs">
@@ -122,8 +124,8 @@
 
                         <div class="row" data-aos="fade-up" data-aos-delay="100">
                             <div class="col-lg-3">
-                                <ul class="nav nav-tabs flex-column">
-                                    <li class="nav-item">
+                                <ul class="nav nav-tabs flex-column" id="list-of-artworks">
+                                    <!-- <li class="nav-item">
                                         <a class="nav-link active show" data-bs-toggle="tab" href="#tab-1">Мале дворске
                                             даме</a>
                                     </li>
@@ -132,12 +134,13 @@
                                     </li>
                                     <li class="nav-item">
                                         <a class="nav-link" data-bs-toggle="tab" href="#tab-3">Врт уживања</a>
-                                    </li>
+                                    </li> -->
+                                    <!-- ovde dodaj ponude -->
                                 </ul>
                             </div>
                             <div class="col-lg-9 mt-4 mt-lg-0">
-                                <div class="tab-content">
-                                    <div class="tab-pane active show" id="tab-1">
+                                <div class="tab-content" id="list-of-offers">
+                                    <!-- <div class="tab-pane active show" id="tab-1">
                                         <div class="row">
                                             <div class="col-lg-8 details order-2 order-lg-1">
                                                 <h3>Ваша понуда: 431 500 РСД</h3>
@@ -160,8 +163,8 @@
                                                 <img src="assets/img/paintings/LasMeninas.jpeg" alt="" class="img-fluid">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-2">
+                                    </div> -->
+                                    <!-- <div class="tab-pane" id="tab-2">
                                         <div class="row">
                                             <div class="col-lg-8 details order-2 order-lg-1">
                                                 <h3>Ваша понуда: 120 000 РСД</h3>
@@ -178,8 +181,8 @@
                                                 <img src="assets/img/paintings/TheThirdOfMay1808.jpeg" alt="" class="img-fluid">
                                             </div>
                                         </div>
-                                    </div>
-                                    <div class="tab-pane" id="tab-3">
+                                    </div> -->
+                                    <!-- <div class="tab-pane" id="tab-3">
                                         <div class="row">
                                             <div class="col-lg-8 details order-2 order-lg-1">
                                                 <h3>Ваша понуда: 254 000 РСД</h3>
@@ -196,7 +199,7 @@
                                                 <img src="assets/img/paintings/TheGardenOfEarthlyDelights.jpeg" alt="" class="img-fluid">
                                             </div>
                                         </div>
-                                    </div>
+                                    </div> -->
                                 </div>
                             </div>
                         </div>
@@ -280,6 +283,7 @@
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
+    <script src="assets/js/scriptMyAccount.js"></script>
 
 </body>
 
