@@ -1,4 +1,4 @@
-var artworks = {
+const artworks = {
     LasMeninas:{
         id: '0',
         name:'Мале дворске даме',
@@ -127,6 +127,4 @@ var artworks = {
     }
 
 };
-
-
 
