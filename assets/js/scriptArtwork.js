@@ -21,6 +21,9 @@ $(document).ready(function () {
         let data = getArtwork();
         // postavljanje naslova
         $(".artwork#artwork-name").text(data.name);
+        // postavljanje tipa umetnina
+        if(data.type == 'painting') $(".artwork#artwork-type").append("<a href='paintings.html'>Слике</a>");
+        else $(".artwork#artwork-type").append("<a href='sculptures.html'>Скулптуре</a>");
         // postavljanje deskripcije umetnika
         $(".artwork#artist-description").text(data.artist);
         // postavljanje vrednosti
