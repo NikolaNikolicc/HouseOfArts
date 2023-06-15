@@ -66,7 +66,7 @@
 
       <nav id="navbar" class="navbar order-last order-lg-0">
         <ul>
-          <li class="dropdown"><a class="nav-link scrollto active" href="index.html#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a href="index.html#home"><span>Почетна</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="index.html#events">Нове поставке</a></li>
               <li><a href="index.html#new-artists">Нови уметници</a></li>
@@ -78,7 +78,7 @@
             </ul>
           </li>
           
-          <li class="dropdown"><a href="artworks.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
+          <li class="dropdown"><a class="nav-link scrollto active" href="artworks.html"><span>Уметнине</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li class="dropdown"><a href="paintings.html"><span>Слике</span> <i class="bi bi-chevron-right"></i></a>
                 <ul id="paintings-list">
@@ -100,7 +100,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="#book-a-reservation" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+      <a href="index.html#book-a-visit" class="book-a-visit-btn scrollto d-none d-lg-flex">Резервиши посету</a>
     </div>
   </header>
 
@@ -123,10 +123,16 @@
       <div class="container">
         <div class="container" data-aos="fade-up">
 
-          <div class="section-title">
+          <div class="section-title d-flex justify-content-between align-items-center sorting">
             <h2>Уметнине</h2>
+            <ul class="dropdown"><span>Сортирај</span> <i class="bi bi-chevron-down"></i>
+              <li id="byName">По називу</li>
+              <li id="byArtist">По уметнику</li>
+            </ul>
           </div>
-  
+          
+          
+
           <div class="row artworks">
           </div>
         </div>
