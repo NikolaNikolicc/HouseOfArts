@@ -92,7 +92,7 @@
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav>
-      <a href="#book-a-visit" class="book-a-table-btn scrollto d-none d-lg-flex">Резервиши посету</a>
+      <a href="#book-a-visit" class="book-a-visit-btn scrollto d-none d-lg-flex">Резервиши посету</a>
     </div>
   </header><!-- End Header -->
 
@@ -329,45 +329,47 @@
           <h2>Резервација</h2>
           <p>Резервиши посету</p>
         </div>
-
-        <form action="forms/book-a-table.php" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 form-group">
-              <input type="text" name="name" class="form-control" id="name" placeholder="Ваше име" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
+        <div class="contact">
+          <form action="#" method="post" role="form" class="php-email-form" data-aos="fade-up" data-aos-delay="100">
+            <div class="row">
+              <div class="col-lg-4 col-md-6 form-group">
+                <input type="text" name="name" class="form-control" id="name" placeholder="Ваше име" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="email" class="form-control" name="email" id="email" placeholder="Ваш мејл" data-rule="email" data-msg="Молимо Вас унесите валидну мејл адресу">
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
+                <input type="text" class="form-control" name="phone" id="phone" placeholder="Ваш телефон" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="text" name="date" class="form-control" id="date" placeholder="Датум" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="text" class="form-control" name="time" id="time" placeholder="Време" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
+                <div class="validate"></div>
+              </div>
+              <div class="col-lg-4 col-md-6 form-group mt-3">
+                <input type="number" class="form-control" name="people" id="people" min="0" placeholder="Број људи" data-rule="minlen:1" data-msg="Молимо Вас унесите најмање 1 карактер">
+                <div class="validate"></div>
+              </div>
+            </div>
+            <div class="form-group mt-3">
+              <textarea class="form-control" name="message" rows="5" placeholder="Порука"></textarea>
               <div class="validate"></div>
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="email" class="form-control" name="email" id="email" placeholder="Ваш мејл" data-rule="email" data-msg="Молимо Вас унесите валидну мејл адресу">
-              <div class="validate"></div>
+            <div class="mb-3">
+              <!-- <div class="loading">Loading</div>
+              <div class="error-message"></div>
+              <div class="sent-message">Ваш захтев је послат. Примићете позив или мејл потрде резервације. Хвала Вам!</div> -->
             </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3 mt-md-0">
-              <input type="text" class="form-control" name="phone" id="phone" placeholder="Ваш телефон" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" name="date" class="form-control" id="date" placeholder="Датум" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="text" class="form-control" name="time" id="time" placeholder="Време" data-rule="minlen:4" data-msg="Молимо Вас унесите најмање 4 карактера">
-              <div class="validate"></div>
-            </div>
-            <div class="col-lg-4 col-md-6 form-group mt-3">
-              <input type="number" class="form-control" name="people" id="people" placeholder="Број људи" data-rule="minlen:1" data-msg="Молимо Вас унесите најмање 1 карактер">
-              <div class="validate"></div>
-            </div>
-          </div>
-          <div class="form-group mt-3">
-            <textarea class="form-control" name="message" rows="5" placeholder="Порука"></textarea>
-            <div class="validate"></div>
-          </div>
-          <div class="mb-3">
-            <div class="loading">Loading</div>
-            <div class="error-message"></div>
-            <div class="sent-message">Ваш захтев је послат. Примићете позив или мејл потрде резервације. Хвала Вам!</div>
-          </div>
-          <div class="text-center"><button type="submit">Резервиши посету</button></div>
-        </form>
+            <div class="text-center"><button type="submit">Резервиши посету</button></div>
+          </form>
+        </div>
+        
 
       </div>
     </section><!-- End Reservation -->
@@ -593,7 +595,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+            <form action="#" method="post" role="form" class="php-email-form">
               <div class="row">
                 <div class="col-md-6 form-group">
                   <input type="text" name="name" class="form-control" id="name" placeholder="Ваше име" required>
@@ -609,9 +611,9 @@
                 <textarea class="form-control" name="message" rows="8" placeholder="Порука" required></textarea>
               </div>
               <div class="my-3">
-                <div class="loading">Loading</div>
+                <!-- <div class="loading">Loading</div>
                 <div class="error-message"></div>
-                <div class="sent-message">Ваша порука је послата. Хвала Вам!</div>
+                <div class="sent-message">Ваша порука је послата. Хвала Вам!</div> -->
               </div>
               <div class="text-center"><button type="submit">Пошаљи поруку</button></div>
             </form>
@@ -645,7 +647,6 @@
   <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>

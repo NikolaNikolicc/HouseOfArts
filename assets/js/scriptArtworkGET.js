@@ -18,8 +18,15 @@ $(document).ready(function () {
     }
 
     function getArtwork() {
+        var queryString = window.location.search;
+        var params = new URLSearchParams(queryString);
+        var artworkId = params.get('id');
         let data;
-        if (sessionStorage.getItem('artwork') != null) data = artworks[sessionStorage.getItem('artwork')];
+        $.each(artworks, function (key, artwork) {
+            if (artwork.id === artworkId) {
+                data = artwork;
+            }
+        });
         return data;
     }
 
@@ -48,22 +55,22 @@ $(document).ready(function () {
      * @param {JSON file} artwork 
      * @returns boolean
      */
-    function validationOfBid(bid, artwork){
-        if(bid == ""){
-            $("div#submitMessage").text("Морате унети износ понуде.").addClass("error-message");
-            return false;
+        function validationOfBid(bid, artwork){
+            if(bid == ""){
+                $("div#submitMessage").text("Морате унети износ понуде.").addClass("error-message");
+                return false;
+            }
+            if(parseInt(bid) < artwork.value){
+                $("div#submitMessage").text("Понуђени износ је мањи од вредности слике.").addClass("error-message");
+                return false;
+            }
+            let pattern = /^\d+$/;
+            if(!pattern.test(bid)){
+                $("div#submitMessage").text("У пољу понуда морају се налазити само цели бројеви.").addClass("error-message");
+                return false;
+            }
+            return true;
         }
-        if(parseInt(bid) < artwork.value){
-            $("div#submitMessage").text("Понуђени износ је мањи од вредности слике.").addClass("error-message");
-            return false;
-        }
-        let pattern = /^\d+$/;
-        if(!pattern.test(bid)){
-            $("div#submitMessage").text("У пољу понуда морају се налазити само цели бројеви.").addClass("error-message");
-            return false;
-        }
-        return true;
-    }
 
     /**
      * funkcija obrade event lsitenera za slanje ponude
@@ -73,12 +80,10 @@ $(document).ready(function () {
         let messageForAuthor = $("#messageForAuthor").val();
 
         // ako je sve ok upisi u sesiju
-        if (sessionStorage.getItem('artwork') != null) data = artworks[sessionStorage.getItem('artwork')];
+        let data = getArtwork();
 
         // validacija (cena i da li je vec licitirao)
-        if(!validationOfBid(bid, data)){
-            return;
-        }
+        validationOfBid(bid, data);
 
         let offer = {
             artwork: JSON.stringify(data),
@@ -95,13 +100,12 @@ $(document).ready(function () {
             $("div#submitMessage").text("Ваша понуда за уметнину је послата. Хвала Вам!").addClass("sent-message");
         }
         else{
-            let change = confirm("Vec ste uneli ponudu za ovu umetninu, zelite li da je izmenite?");
+            let change = confirm("Већ сте  унели понуду за ову уметнину, желите ли да је измените?");
             if(change){
                 changeCurrentBid(bid, messageForAuthor, data, myOffers);
                 localStorage.setItem("offers", JSON.stringify(myOffers));
                 alert("mora se izmeniti value na novu cenu");
                 $("div#submitMessage").text("Ваша понуда за уметнину је измењена. Хвала Вам!").addClass("sent-message");
-                
             }
         }
         
@@ -148,9 +152,6 @@ $(document).ready(function () {
         let data = getArtwork();
         // postavljanje naslova
         $(".artwork#artwork-name").text(data.name);
-        // postavljanje tipa umetnina
-        if(data.type == 'painting') $(".artwork#artwork-type").append("<a href='paintings.html'>Слике</a>");
-        else $(".artwork#artwork-type").append("<a href='sculptures.html'>Скулптуре</a>");
         // postavljanje deskripcije umetnika
         $(".artwork#artist-description").text(data.artist);
         // postavljanje vrednosti

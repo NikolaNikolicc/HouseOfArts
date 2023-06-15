@@ -95,7 +95,7 @@ h6 {
   line-height: 0;
 }
 
-.back-to-top:hover {
+.back-to-top:hover{
   background: #cda45e;
   color: #1a1814;
 }
@@ -206,7 +206,7 @@ h6 {
 /*--------------------------------------------------------------
 # Book a table button Menu
 --------------------------------------------------------------*/
-.book-a-table-btn {
+.book-a-visit-btn {
   margin: 0 0 0 15px;
   border: 2px solid #cda45e;
   color: #fff;
@@ -219,13 +219,13 @@ h6 {
   transition: 0.3s;
 }
 
-.book-a-table-btn:hover {
+.book-a-visit-btn:hover {
   background: #cda45e;
   color: #fff;
 }
 
 @media (max-width: 992px) {
-  .book-a-table-btn {
+  .book-a-visit-btn {
     margin: 0 15px 0 0;
     padding: 8px 20px;
   }
@@ -1053,17 +1053,17 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Book A Table
+# Book A Visit
 --------------------------------------------------------------*/
-.book-a-table .php-email-form {
+.book-a-visit .php-email-form {
   width: 100%;
 }
 
-.book-a-table .php-email-form .form-group {
+.book-a-visit .php-email-form .form-group {
   padding-bottom: 8px;
 }
 
-.book-a-table .php-email-form .validate {
+.book-a-visit .php-email-form .validate {
   display: none;
   color: red;
   margin: 0 0 15px 0;
@@ -1071,8 +1071,8 @@ section {
   font-size: 13px;
 }
 
-.book-a-table .php-email-form .error-message {
-  display: none;
+.book-a-visit .php-email-form .error-message {
+  /* display: none; */
   color: #fff;
   background: #ed3c0d;
   text-align: left;
@@ -1080,12 +1080,12 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .error-message br+br {
+.book-a-visit .php-email-form .error-message br+br {
   margin-top: 25px;
 }
 
-.book-a-table .php-email-form .sent-message {
-  display: none;
+.book-a-visit .php-email-form .sent-message {
+  /* display: none; */
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1093,13 +1093,13 @@ section {
   font-weight: 600;
 }
 
-.book-a-table .php-email-form .loading {
-  display: none;
+.book-a-visit .php-email-form .loading {
+  /* display: none; */
   text-align: center;
   padding: 15px;
 }
 
-.book-a-table .php-email-form .loading:before {
+.book-a-visit .php-email-form .loading:before{
   content: "";
   display: inline-block;
   border-radius: 50%;
@@ -1111,8 +1111,8 @@ section {
   animation: animate-loading 1s linear infinite;
 }
 
-.book-a-table .php-email-form input,
-.book-a-table .php-email-form textarea {
+.book-a-visit .php-email-form input,
+.book-a-visit .php-email-form textarea{
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;
@@ -1121,30 +1121,30 @@ section {
   color: white;
 }
 
-.book-a-table .php-email-form input::-moz-placeholder,
-.book-a-table .php-email-form textarea::-moz-placeholder {
+.book-a-visit .php-email-form input::-moz-placeholder,
+.book-a-visit .php-email-form textarea::-moz-placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input::placeholder,
-.book-a-table .php-email-form textarea::placeholder {
+.book-a-visit .php-email-form input::placeholder,
+.book-a-visit .php-email-form textarea::placeholder {
   color: #a49b89;
 }
 
-.book-a-table .php-email-form input:focus,
-.book-a-table .php-email-form textarea:focus {
+.book-a-visit .php-email-form input:focus,
+.book-a-visit .php-email-form textarea:focus {
   border-color: #cda45e;
 }
 
-.book-a-table .php-email-form input {
+.book-a-visit .php-email-form input {
   height: 44px;
 }
 
-.book-a-table .php-email-form textarea {
+.book-a-visit .php-email-form textarea {
   padding: 10px 12px;
 }
 
-.book-a-table .php-email-form button[type=submit] {
+.book-a-visit .php-email-form button[type=submit] {
   background: #cda45e;
   border: 0;
   padding: 10px 35px;
@@ -1153,7 +1153,7 @@ section {
   border-radius: 50px;
 }
 
-.book-a-table .php-email-form button[type=submit]:hover {
+.book-a-visit .php-email-form button[type=submit]:hover {
   background: #d3af71;
 }
 
@@ -1398,7 +1398,7 @@ section {
 }
 
 .contact .php-email-form .error-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #ed3c0d;
   text-align: center;
@@ -1407,7 +1407,7 @@ section {
 }
 
 .contact .php-email-form .sent-message {
-  display: none;
+  /* display: none; */
   color: #fff;
   background: #18d26e;
   text-align: center;
@@ -1416,7 +1416,7 @@ section {
 }
 
 .contact .php-email-form .loading {
-  display: none;
+  /* display: none; */
   text-align: center;
   padding: 15px;
 }
