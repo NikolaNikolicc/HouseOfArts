@@ -1,5 +1,5 @@
 $(document).ready(function () {
-
+    
     // let myOffers = [
     //     {
     //         artwork: JSON.stringify(data),
@@ -24,6 +24,32 @@ $(document).ready(function () {
         }
     }
 
+    function getKeyFromId(artworkId) {
+        let artworkKey;
+        $.each(artworks, function (key, artwork) {
+            if (artwork.id === artworkId) {
+                artworkKey = key;
+            }
+        });
+        return artworkKey;
+    }
+
+    /**
+     * event listener za link
+     */
+    $(".link-artwork").click(function(){
+        let clickedId = $(this).attr('id');
+        let key = getKeyFromId(clickedId);
+        sessionStorage.setItem('artwork', key);
+    })
+
+    /**
+     * dinamicko dodavanje elemenata
+     * @param {Struct} artwork 
+     * @param {int} bid 
+     * @param {String} message 
+     * @param {int} cntForActive 
+     */
     function appendElements(artwork, bid, message,cntForActive) {
         // dodavanje u prvi deo
         var liElement = $('<li>').addClass('nav-item');
@@ -39,7 +65,10 @@ $(document).ready(function () {
         var col2Element = $('<div>').addClass('col-lg-4 text-center order-1 order-lg-2');
         var h3Element1 = $('<h3>').text('Ваша понуда: ' + bid);
         var pElement1 = $('<p>').addClass('fst-italic').text('Проверите статус понуде за ову уметнину кликом на ');
-        var aElement = $('<a>').attr('href', 'artworkGET.html?id='+artwork.id).text('линк');
+        var aElement = $('<a>').attr('href', 'artwork.html')
+                        .text('линк')
+                        .addClass('link-artwork')
+                        .attr('id', artwork.id);
         pElement1.append(aElement);
         var h3Element2 = $('<h3>').text('Ваша порука уметнику');
         if(message == "")message = "Нисте оставили поруку приликом даваања понуде.";
