@@ -20,14 +20,14 @@ $(document).ready(function(){
         sortKeysByName();
         addArtworks();
         sessionStorage.setItem('sortingArtworks', 'byName');
-    })
+    });
 
     $("#byArtist").click(function () {
         $(".artworks").empty();
         sortKeysByArtist();
         addArtworks(); 
         sessionStorage.setItem('sortingArtworks', 'byArtist');
-    })
+    });
 
     function sortKeysByName(){
 
@@ -42,6 +42,7 @@ $(document).ready(function(){
             }
             return 0;
         });
+
     }
 
     function sortKeysByArtist(){
@@ -82,6 +83,27 @@ $(document).ready(function(){
             alert($(this).attr("id"));
             sessionStorage.setItem('artwork', $(this).attr("id"));
         });
+    }
+
+    $("#search").keyup(function() {
+        var typedText = $(this).val().toUpperCase();
+        $(".artworks").empty();
+        findKeys(typedText);
+        addArtworks();
+    });
+
+    function findKeys(typedText){
+        var newKeys = [];
+        keys = Object.keys(artworks);
+        keys.forEach(key => {
+            
+            if(artworks[key].name.toUpperCase().includes(typedText) || artworks[key].artist.toUpperCase().includes(typedText)){
+                newKeys.push(key);
+            }
+            
+        });
+
+        keys = newKeys;
     }
     
 });

@@ -11,7 +11,7 @@ $(document).ready(function () {
     initFunc();
 
     /**
-     * ova fja se izvrsava samo kada je ucitana stranica artwork1.html
+     * ova fja se izvrsava samo kada je ucitana stranica artwork.html
      */
     function initFunc() {
         appendElements();
