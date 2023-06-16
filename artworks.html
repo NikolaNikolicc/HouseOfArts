@@ -125,13 +125,19 @@
 
           <div class="section-title d-flex justify-content-between align-items-center sorting">
             <h2>Уметнине</h2>
-            <ul class="dropdown"><span>Сортирај</span> <i class="bi bi-chevron-down"></i>
-              <li id="byName">По називу</li>
-              <li id="byArtist">По уметнику</li>
-            </ul>
+            
+
+            <nav id="navbar" class="navbar order-last order-lg-0">
+              <ul>
+                <li class="dropdown"><a href="#"><span>Сортирај</span> <i class="bi bi-chevron-down"></i></a>
+                  <ul>
+                    <li><a id="byName" href="#">По називу</a></li>
+                    <li><a id="byArtist" href="#">По имену уметника</a></li>  
+                  </ul>
+                </li>
+              </ul>
+            </nav>
           </div>
-          
-          
 
           <div class="row artworks">
           </div>

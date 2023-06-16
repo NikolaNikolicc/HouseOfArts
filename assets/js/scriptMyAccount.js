@@ -26,6 +26,7 @@ $(document).ready(function () {
 
     function getKeyFromId(artworkId) {
         let artworkKey;
+        alert(artworks);
         $.each(artworks, function (key, artwork) {
             if (artwork.id === artworkId) {
                 artworkKey = key;

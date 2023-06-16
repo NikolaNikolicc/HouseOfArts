@@ -19,6 +19,7 @@ $(document).ready(function(){
     });
 
     $(".artwork-redirect").click(function(){
+        alert($(this).attr("id"));
         sessionStorage.setItem('artwork', $(this).attr("id"));
     });
 
