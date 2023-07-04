@@ -1239,6 +1239,87 @@ section {
 }
 
 /*--------------------------------------------------------------
+# Testimonials
+--------------------------------------------------------------*/
+.latest-offers .latest-offers-carousel,
+.latest-offers .latest-offers-slider {
+  overflow: hidden;
+}
+
+.latest-offers .latest-offers-item {
+  box-sizing: content-box;
+  min-height: 320px;
+}
+
+.latest-offers .latest-offers-item .latest-offers-img {
+  width: 90px;
+  border-radius: 50%;
+  margin: -40px 0 0 40px;
+  position: relative;
+  z-index: 2;
+  border: 6px solid rgba(255, 255, 255, 0.2);
+}
+
+.latest-offers .latest-offers-item h3 {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 10px 0 5px 45px;
+  color: white;
+}
+
+.latest-offers .latest-offers-item h4 {
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 0 0 45px;
+}
+
+.latest-offers .latest-offers-item .quote-icon-left,
+.latest-offers .latest-offers-item .quote-icon-right {
+  color: #d3af71;
+  font-size: 26px;
+}
+
+.latest-offers .latest-offers-item .quote-icon-left {
+  display: inline-block;
+  left: -5px;
+  position: relative;
+}
+
+.latest-offers .latest-offers-item .quote-icon-right {
+  display: inline-block;
+  right: -5px;
+  position: relative;
+  top: 10px;
+}
+
+.latest-offers .latest-offers-item p {
+  font-style: italic;
+  margin: 0 15px 0 15px;
+  padding: 20px 20px 60px 20px;
+  background: #26231d;
+  position: relative;
+  border-radius: 6px;
+  position: relative;
+  z-index: 1;
+}
+
+.latest-offers .swiper-pagination {
+  margin-top: 30px;
+  position: relative;
+}
+
+.latest-offers .swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: rgba(255, 255, 255, 0.4);
+  opacity: 1;
+}
+
+.latest-offers .swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #cda45e;
+}
+
+/*--------------------------------------------------------------
 # Gallery
 --------------------------------------------------------------*/
 .gallery .gallery-item {
