@@ -66,7 +66,7 @@ $(document).ready(function(){
                                         "<img src='assets/img/"+ value.image +"' class='img-fluid' alt=''>" +
                                             "<div class='member-info'>" +
                                                 "<div class='member-info-content'>" +
-                                                    "<h4>"+ value.name +"</h4><a href='artwork.html' class='artwork-redirect' id="+ key +">Погледај</a>" +
+                                                    "<h4><span>"+ value.name +"</span></h4><a href='artwork.html' class='artwork-redirect' id="+ key +"><span>Погледај</span></a>" +
                                                 "</div>" +
                                             "</div>" +
                                         "</img>" +

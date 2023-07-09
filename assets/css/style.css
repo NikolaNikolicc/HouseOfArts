@@ -151,8 +151,12 @@ h6 {
   color: #cda45e;
 }
 
-#topbar .languages ul a {
+.unactive-lang {
   color: white;
+}
+
+.active-lang{
+  color: #cda45e;
 }
 
 #topbar .languages ul li+li {
